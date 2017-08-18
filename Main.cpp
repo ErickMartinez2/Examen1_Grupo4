@@ -98,9 +98,8 @@ int main() {
 										   dinero = stoi(cadena3.c_str());
 										   addstr("\n");
 										   addstr("Ingrese la fuerza de la montaña: ");
-										   int fuerza;
-										   string cadena4 = Leer();
-										   fuerza = stoi(cadena4.c_str());
+										   string fuerza;
+										   fuerza = Leer();
 										   lannister = new Lannister(jefe_familia, emblema, lema, dinero, fuerza);
 										   addstr("\n");
 										   addstr("Familia Lannister Creada!!");
@@ -109,8 +108,21 @@ int main() {
 									   }
 								   }break;
 							case 3:{
-									   if (targaryen != NULL) {
-										   targaryen = new Targaryen();
+									   if (targaryen == NULL) {
+										   addstr("-> Datos Familia Lannister\n");
+										   addstr("Ingrese el nombre de la reina: ");
+										   string reina;
+										   reina = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el animal emblema: ");
+										   string emblema;
+										   emblema = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el lema: ");
+										   string lema;
+										   lema = Leer();
+										   addstr("\n");
+										   targaryen = new Targaryen(reina, emblema, lema);
 										   addstr("Familia Targaryen Creada!!");
 									   } else {
 										   addstr("Ya esta Creada la Familia Targaryen!!");
@@ -139,11 +151,6 @@ int main() {
 		getch();
 		refresh();
 	} while (opcion != 7);
-	/*clear();
-	  getch();
-	  string ca = Leer();
-	  printw(ca.c_str());
-	  getch();*/
 	endwin();
 	delete stark;
 	delete lannister;
