@@ -15,9 +15,28 @@ Stark::Stark(string pJefe, int pLobos, string pEmblema, string pLema, Noble** pN
 	nobles=pNobles;
 	guerrero=pGuerrero;
 }
+string Stark::getJefe(){
+	return jefe;
+}
+
+int Stark::getLobos(){
+	return lobos;
+}
+
+string Stark::getEmblema(){
+	return emblema;
+}
+
+string Stark::getLema(){
+	return lema;
+}
 
 Noble** Stark::getNobles(){
 	return nobles;
+}
+
+string Stark::getGuerrero(){
+	return guerrero;
 }
 
 void Stark::setJefe(string pJefe){

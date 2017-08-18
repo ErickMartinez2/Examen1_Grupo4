@@ -1,26 +1,26 @@
-#ifndef NOBLE_H
-#define NOBLE_H
+#ifndef GUARDIA_H 
+#define GUARDIA_H
 #include <string>
 using namespace std;
 
-class Noble{
+class Guardia{
 	private:
 		string nombre;
-		string escudo;
-		string lema;
+		int edad;
+		string soldado;
 		int ataque;
 		int defensa;
 	public:
-		Noble();
-		Noble(string, string, int, int);
+		Guardia();
+		Guardia(string, int, string, int, int);
 		string getNombre();
-		string getEscudo();
-		string getLema();
+		int getEdad();
+		string getSoldado();
 		int getAtaque();
 		int getDefensa();
 		void setNombre(string);
-		void setEscudo(string);
-		void setLema(string);
+		void setEdad(int);
+		void setSoldado(string);
 		void setAtaque(int);
 		void setDefensa(int);
 };
