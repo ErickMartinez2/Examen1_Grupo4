@@ -172,15 +172,17 @@ string Leer() {
 }
 
 void Trono() {
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("\n");
-	addstr("************************************\n");
+	addstr("             \|||/\n");
+	addstr("          \\\\|||////\n");
+	addstr("        \\\\\\|||//////\n");
+	addstr("       \\/\\\\\|/////\//\n");
+	addstr("      \/*\/////|\\\\\/*\/\n");
+	addstr("      \\/*\\\\\|/////*\//\n");
+	addstr("      \\\/*\\\\|////*\///\n");
+	addstr("      \\\\//\\\|///\\//// \n");
+	addstr("        \\\_\\\|///_///\n");
+	addstr("          |*|_____|*|\n");
+	addstr("         /|||**|**|||\ \n");
+    addstr("        /*|||*|*|*|||*\ \n");
+	addstr("	   /__|_|_____|_|__\ \n");
 }
