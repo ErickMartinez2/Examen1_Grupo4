@@ -1,0 +1,28 @@
+cout<<"Familia Stark:" <<endl
+	<<"Jefe de Familia: " <<stark->getJefe() <<endl
+	<<"Cantidad de Lobos: " <<stark->getLobo() <<endl
+	<<"Animal Emblema: " <<stark->getEmblema() <<endl
+	<<"Lema: " <<stark->getLema() <<endl
+	<<"Guerrero mas valioso: " <<stark->getGuerrero() <<endl;
+
+//Aqui va lo de imprimir ejercitos
+
+cout<<"Familia Lannister" <<endl
+	<<"Jefe de Familia: " <<lannister->getJefe() <<endl
+	<<"Animal Emblema: " <<lannister->getEmblema() <<endl
+	<<"Lema: " <<lannister->getLema() <<endl
+	<<"Cantidad de dinero: " <<lannister->getDinero() <<endl
+	<<"Fuerza de Montana: " <<lannister->getMontana() <<endl;
+
+//Aqui va lo de imprimir ejercitos
+
+cout<<"Familia Targaryen:" <<endl
+	<<"Reina: " <<targaryen->getReina <<endl
+	<<"Animal Emblema: " <<targaryen->getEmblema <<endl
+	<<"Lema: " <<targaryen->getLema <<endl;
+
+//Aqui va lo de imprimir dothraki y dragones
+
+
+
+	
