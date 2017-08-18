@@ -131,26 +131,54 @@ int main() {
 						}
 					}break;
 			case 2:{
-					   addstr("Esta en la opcion 2!");
+					   addstr("No Modifica!");
 				   }break;
 			case 3:{
-					   addstr("Esta en la opcion 3!");
+						addstr("No Lista, pero ver codigo!");
+					/*addstr("Familia Stark:\n");
+					addstr("Jefe de Familia: ";
+					addstr(stark->getJefe());
+					addstr("\nCantidad de Lobos: "); <<stark->getLobo() 
+					addstr("\nAnimal Emblema: "); <<stark->getEmblema()
+					addstr("\nLema: "); <<stark->getLema()
+					addstr("\nGuerrero mas valioso: ") <<stark->getGuerrero()
+
+					   //Aqui va lo de imprimir ejercitos
+
+					addstr("\nFamilia Lannister") <<endl
+					addstr("\nJefe de Familia: ") <<lannister->getJefe()
+					addstr("\nAnimal Emblema: ") <<lannister->getEmblema() 
+					addstr("\nLema: ") <<lannister->getLema() 
+					addstr("\nCantidad de dinero: ") <<lannister->getDinero() <<endl
+					addstr("\nFuerza de Montana: ") <<lannister->getMontana() <<endl;
+
+					   //Aqui va lo de imprimir ejercitos
+
+					addstr("\nFamilia Targaryen:") 
+					addstr("\nReina: ") <<targaryen->getReina <<endl
+					addstr("\nAnimal Emblema: ") <<targaryen->getEmblema <<endl
+					addstr("\nLema: ") <<targaryen->getLema <<endl;
+					
+					   //Aqui va lo de imprimir dothraki y dragones*/
+
 				   }break;
 			case 4:{
-					   addstr("Esta en la opcion 4!");
+					   addstr("No Modifica!");
 				   }break;
 			case 5:{
-					   addstr("Esta en la opcion 5!");
+					   addstr("No Elimina!");
 				   }break;
 			case 6:{
+						addstr("No Simula!");
 				   }break;
 			case 7:{
 					   addstr("Hasta Pronto!!");
+					   Trono();	
 				   }break;
 		}
 		getch();
 		refresh();
-	} while (opcion != 7);
+	} while (opcion != 7);	
 	endwin();
 	delete stark;
 	delete lannister;
@@ -172,17 +200,18 @@ string Leer() {
 }
 
 void Trono() {
-	addstr("             \|||/\n");
-	addstr("          \\\\|||////\n");
-	addstr("        \\\\\\|||//////\n");
-	addstr("       \\/\\\\\|/////\//\n");
-	addstr("      \/*\/////|\\\\\/*\/\n");
-	addstr("      \\/*\\\\\|/////*\//\n");
-	addstr("      \\\/*\\\\|////*\///\n");
-	addstr("      \\\\//\\\|///\\//// \n");
-	addstr("        \\\_\\\|///_///\n");
+	addstr("        Trono de Hierro:\n");
+	addstr("             )|||/\n");
+	addstr("          ))))|||////\n");
+	addstr("        ))))))|||//////\n");
+	addstr("       ))/)))))|/////)//\n");
+	addstr("      )/*))))))|)))))/*)/\n");
+	addstr("      ))/*)))))|/////*)//\n");
+	addstr("      )))/*))))|////*)///\n");
+	addstr("      ))))//)))|///))////\n");
+	addstr("        )))_)))|///_///\n");
 	addstr("          |*|_____|*|\n");
-	addstr("         /|||**|**|||\ \n");
-    addstr("        /*|||*|*|*|||*\ \n");
-	addstr("	   /__|_|_____|_|__\ \n");
+	addstr("         /|||**|**|||)\n");
+	addstr("        /*|||*|*|*|||*)\n");
+	addstr("       /__|_|_____|_|__)\n");
 }

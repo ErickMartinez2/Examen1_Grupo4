@@ -1,27 +1,27 @@
-main: Main.o Stark.o Lannister.o Targaryen.o
-	g++ Main.o Stark.o Lannister.o Targaryen.o -o a
+Main: Main.o Stark.o Lannister.o Targaryen.o Noble.o Guardia.o Dothraki.o Dragon.o
+	g++ Main.o Stark.o Lannister.o Targaryen.o Noble.o Guardia.o Dothraki.o Dragon.o -lncurses -o a
 
-main: Main.cpp Stark.h Lannister.h Targaryen.h
-	g++ -c Main.cpp Stark.cpp Lannister.cpp Targaryen.cpp Noble.cpp Guardia.cpp Dothraki.cpp Dragon.cpp -o a
+Main.o: Main.cpp Stark.h Lannister.h Targaryen.h Noble.h Guardia.h Dothraki.h Dragon.h
+	g++ -c Main.cpp Stark.cpp Lannister.cpp Targaryen.cpp Noble.cpp Guardia.cpp Dothraki.cpp Dragon.cpp
 
-main: Stark.cpp Stark.h
+Stark.o: Stark.cpp Stark.h
 	g++ -c Stark.cpp
 
-main: Lannister.cpp Lannister.h
+Lannister.o: Lannister.cpp Lannister.h
 	g++ -c Lannister.cpp
 
-main: Targaryen.cpp Targaryen.h
+Targaryen.o: Targaryen.cpp Targaryen.h
 	g++ -c Targaryen.cpp
 
-main: Noble.cpp Noble.h
+Noble.o: Noble.cpp Noble.h
 	g++ -c Noble.cpp
 
-main: Guardia.cpp Guardia.h
+Guardia.o: Guardia.cpp Guardia.h
 	g++ -c Guardia.cpp
 
-main: Dothraki.cpp Dothraki.h
+Dothraki.o: Dothraki.cpp Dothraki.h
 	g++ -c Dothraki.cpp
 
-main: Dragon.cpp Dragon.h
+Drago.o: Dragon.cpp Dragon.h
 	g++ -c Dragon.cpp
 
