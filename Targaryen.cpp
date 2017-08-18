@@ -30,7 +30,7 @@ Dothraki** Targaryen::getDothrakis(){
 	return dothrakis;
 }
 
-Dragon** Targaryen::getDragones(){
+Dragon** Targaryen::getDragon(){
 	return dragones;
 }
 

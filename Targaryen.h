@@ -12,7 +12,6 @@ class Targaryen{
 		string lema;
 		Dothraki** dothrakis;
 		Dragon** dragones;
-
 	public:
 		Targaryen();
 		Targaryen(string, string, string);

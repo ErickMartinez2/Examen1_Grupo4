@@ -31,11 +31,11 @@ string Dothraki::getColor(){
 	return color;
 }
 
-string Dothraki::getAtaque(){
+int Dothraki::getAtaque(){
 	return ataque;
 }
 
-string Dothraki::getDefensa(){
+int Dothraki::getDefensa(){
 	return defensa;
 }
 

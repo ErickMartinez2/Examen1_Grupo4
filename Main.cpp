@@ -6,6 +6,9 @@
 #include "Noble.h"
 #include "Lannister.h"
 #include "Guardia.h"
+#include "Targaryen.h"
+#include "Dothraki.h"
+#include "Dragon.h"
 using namespace std;
 
 string Leer();
@@ -16,7 +19,7 @@ int main() {
 	int opcion;
 	Stark* stark = NULL;
 	Lannister* lannister = NULL;
-	//Targaryen* targaryen = NULL;
+	Targaryen* targaryen = NULL;
 	do {
 		clear();
 		addstr("*** Examen 1 ***\n");
@@ -29,15 +32,7 @@ int main() {
 		addstr("7. Salir\n");
 		addstr("Ingrese su opción: ");
 		//printw("%d", opcion);
-		/*char caracter;
-		stringstream ss;
-		string cadena;
-		caracter = getch();
-		while (caracter != '\n') {
-			ss << caracter;
-			caracter = getch();
-		}*/
-		string cadena = leer;
+		string cadena = Leer();
 		opcion = stoi(cadena.c_str());
 		clear();
 		switch (opcion) {
@@ -47,91 +42,80 @@ int main() {
 						addstr("2. Lannister\n");
 						addstr("3. Targaryen\n");
 						addstr("Ingrese su opcion: ");
-						/*char caracter2;
-						stringstream ss2;*/
 						string cadena2;
-						/*caracter2 = getch();
-						while (caracter2 != '\n') {
-							ss2 << caracter2;
-							caracter2 = getch();
-						}*/
-						cadena2 = ss2.str();
+						cadena2 = Leer();
 						int opcion2 = stoi(cadena2.c_str());
 						clear();
 						switch (opcion2) {
-							case 1:
-								if (stark == NULL) {
-									addstr("-> Datos Familia Stark\n");
-									addstr("Ingrese el jefe de familia: ");
-									string jefe_familia;
-									char caracter3;
-									stringstream ss3;
-									caracter2 = getch();
-									while (caracter3 != '\n') {
-										ss3 << caracter3;
-										caracter3 = getch();
-									}
-									jefe_familia = ss3.str();
-									addstr("\n");
-									addstr("Ingrese la cantidad de lobos: ");
-									int lobos;
-									char caracter4;
-									stringstream ss4;
-									string cadena4;
-									caracter4 = getch();
-									while (caracter4 != '\n') {
-										ss4 << caracter4;
-										caracter4 = getch();
-									}
-									cadena4 = ss4.str();
-									lobos = stoi(cadena4.c_str());
-									addstr("\n");
-									addstr("Ingrese el animal emblema: ");
-									string emblema;
-									char caracter5;
-									stringstream ss5;
-									caracter5 = getch();
-									while (caracter5 != '\n') {
-										ss5 << caracter5;
-										caracter5 = getch();
-									}
-									emblema = ss5.str();
-									addstr("\n");
-									addstr("Ingrese el lema: ");
-									string lema;
-									char caracter6;
-									stringstream ss6;
-									caracter6 = getch();
-									while (caracter6 != '\n') {
-										ss6 << caracter6;
-										caracter6 = getch();
-									}
-									jefe_familia = ss6.str();
-									addstr("\n");
-									addstr("\n");
-									string guerrero;
-									stark = new Stark();
-									addstr("Familia Stark Creada!!");
-								} else {
-									addstr("Ya esta Creada la Familia Stark!!");
-								}
-								break;
-							case 2:
-								if (lannister == NULL) {
-									lannister = new Lannister();
-									addstr("Familia Lannister Creada!!");
-								} else {
-									addstr("Ya esta Creada la Familia Lannister!!");
-								}
-								break;
-								/*case 3:
-								  if (targaryen != NULL) {
-								  targaryen = new Targaryen();
-								  addstr("Familia Targaryen Creada!!");
-								  } else {
-								  addstr("Ya esta Creada la Familia Targaryen!!");
-								  }
-								  break;*/
+							case 1:{
+									   if (stark == NULL) {
+										   addstr("-> Datos Familia Stark\n");
+										   addstr("Ingrese el jefe de familia: ");
+										   string jefe_familia;
+										   jefe_familia = Leer();
+										   addstr("\n");
+										   addstr("Ingrese la cantidad de lobos: ");
+										   int lobos;
+										   string cadena3 = Leer();
+										   lobos = stoi(cadena3.c_str());
+										   addstr("\n");
+										   addstr("Ingrese el animal emblema: ");
+										   string emblema;
+										   emblema = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el lema: ");
+										   string lema;
+										   jefe_familia = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el nombre del guerrero mas valioso: ");
+										   string guerrero;
+										   guerrero = Leer();
+										   stark = new Stark(jefe_familia, lobos, emblema, lema, guerrero);
+										   addstr("\n");
+										   addstr("Familia Stark Creada!!");
+									   } else {
+										   addstr("Ya esta Creada la Familia Stark!!");
+									   }
+								   }break;
+							case 2:{
+									   if (lannister == NULL) {
+										   addstr("-> Datos Familia Lannister\n");
+										   addstr("Ingrese el jefe de familia: ");
+										   string jefe_familia;
+										   jefe_familia = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el animal emblema: ");
+										   string emblema;
+										   emblema = Leer();
+										   addstr("\n");
+										   addstr("Ingrese el lema: ");
+										   string lema;
+										   jefe_familia = Leer();
+										   addstr("\n");
+										   addstr("Ingrese la cantidad de dinero: ");
+										   int dinero;
+										   string cadena3 = Leer();
+										   dinero = stoi(cadena3.c_str());
+										   addstr("\n");
+										   addstr("Ingrese la fuerza de la montaña: ");
+										   int fuerza;
+										   string cadena4 = Leer();
+										   fuerza = stoi(cadena4.c_str());
+										   lannister = new Lannister(jefe_familia, emblema, lema, dinero, fuerza);
+										   addstr("\n");
+										   addstr("Familia Lannister Creada!!");
+									   } else {
+										   addstr("Ya esta Creada la Familia Lannister!!");
+									   }
+								   }break;
+							case 3:{
+									   if (targaryen != NULL) {
+										   targaryen = new Targaryen();
+										   addstr("Familia Targaryen Creada!!");
+									   } else {
+										   addstr("Ya esta Creada la Familia Targaryen!!");
+									   }
+								   }break;
 						}
 					}break;
 			case 2:{
@@ -156,14 +140,14 @@ int main() {
 		refresh();
 	} while (opcion != 7);
 	/*clear();
-	getch();
-	string ca = Leer();
-	printw(ca.c_str());
-	getch();*/
+	  getch();
+	  string ca = Leer();
+	  printw(ca.c_str());
+	  getch();*/
 	endwin();
 	delete stark;
 	delete lannister;
-	//delete targaryen;
+	delete targaryen;
 	return 0;
 }
 
