@@ -2,7 +2,13 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include "Stark.h"
+#include "Noble.h"
+#include "Lannister.h"
+#include "Guardia.h"
 using namespace std;
+
+void Trono();
 
 int main() {
 	initscr();
@@ -57,4 +63,18 @@ int main() {
 	} while (opcion != 7);
 	endwin();
 	return 0;
+}
+
+void Trono() {
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("\n");
+	addstr("************************************\n");
 }
