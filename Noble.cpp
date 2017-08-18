@@ -18,6 +18,13 @@ string Noble::getNombre(){
 	return nombre;
 }
 
+string Noble::getEscudo(){
+	return escudo;
+}
+
+string Noble::getLema(){
+	return lema;
+}
 int Noble::getAtaque(){
 	return ataque;
 }
