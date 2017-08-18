@@ -16,7 +16,7 @@ class Stark{
 
 	public:
 		Stark();
-		Stark(string, int, string, string, Noble**, string int);
+		Stark(string, int, string, string, Noble**, string);
 		string getJefe();
 		int getLobos();
 		string getEmblema();
