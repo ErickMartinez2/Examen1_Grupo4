@@ -7,12 +7,11 @@ Stark::Stark(){
 	nobles=NULL;
 }
 
-Stark::Stark(string pJefe, int pLobos, string pEmblema, string pLema, Noble** pNobles, string pGuerrero){
+Stark::Stark(string pJefe, int pLobos, string pEmblema, string pLema, string pGuerrero){
 	jefe=pJefe;
 	lobos=pLobos;
 	emblema=pEmblema;
 	lema=pLema;
-	nobles=pNobles;
 	guerrero=pGuerrero;
 }
 string Stark::getJefe(){

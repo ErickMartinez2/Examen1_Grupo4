@@ -16,7 +16,7 @@ class Lannister{
 
 	public:
 		Lannister();
-		Lannister(string, string, string, Guardia**, int, string);
+		Lannister(string, string, string, int, string);
 		string getJefe();
 		string getEmblema();
 		string getLema();

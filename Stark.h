@@ -16,7 +16,7 @@ class Stark{
 
 	public:
 		Stark();
-		Stark(string, int, string, string, Noble**, string);
+		Stark(string, int, string, string, string);
 		string getJefe();
 		int getLobos();
 		string getEmblema();
@@ -24,7 +24,7 @@ class Stark{
 		Noble** getNobles();
 		string getGuerrero();
 		void setJefe(string);
-		void setlobos(int);
+		void setLobos(int);
 		void setEmblema(string);
 		void setLema(string);
 		void setNobles(Noble**);

@@ -12,7 +12,7 @@ class Noble{
 		int defensa;
 	public:
 		Noble();
-		Noble(string, string, int, int);
+		Noble(string, string, string, int, int);
 		string getNombre();
 		string getEscudo();
 		string getLema();

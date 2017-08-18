@@ -7,11 +7,10 @@ Lannister::Lannister(){
 	
 }
 
-Lannister::Lannister(string pJefe, string pEmblema, string pLema, Guardia** pGuardias, int pDinero, string pMontana){
+Lannister::Lannister(string pJefe, string pEmblema, string pLema, int pDinero, string pMontana){
 	jefe=pJefe;
 	emblema=pEmblema;
 	lema=pLema;
-	guardias=pGuardias;
 	dinero=pDinero;
 	montana=pMontana;
 }
